@@ -5,6 +5,7 @@
  * Algoritmos y estructuras de Datos HDT2
  * 
  * Controlador.java 
+ * main del programa
  */
 
 import java.io.FileReader;
@@ -29,9 +30,9 @@ public class Controlador {
             buffR= new BufferedReader(lectura);
             line= buffR.readLine();
             vista.mensaje("\nLeyendo su archivo.....");
+            vista.mensaje("\nSu resultado es: "+ calculadora.Calculo(line) );
         } catch (Exception e) {
-            vista.mensaje("\nNo hay ningún archivo");
+            vista.mensaje("\nNo se encontro archivo, asegurese de ingresar el nombre correctamente.");
         }  
-        vista.mensaje("\nSu resultado es: "+ calculadora.Calculo(line) );
     }
 }
