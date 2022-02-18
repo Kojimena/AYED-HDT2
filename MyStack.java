@@ -19,6 +19,7 @@ public class MyStack<E> implements Stack<E> {
     */
     public void Push(E element) { 
 		vec.addElement(element);
+		
 	}
 
     /**
