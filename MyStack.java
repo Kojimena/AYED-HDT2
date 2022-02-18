@@ -44,7 +44,6 @@ public class MyStack<E> implements Stack<E> {
      * @return 
      * Devolver el ultimo valor 
      */
-    @Override
     public E peek() {
         return vec.get(vec.size()-1);
     }
@@ -54,7 +53,6 @@ public class MyStack<E> implements Stack<E> {
      * @return 
      * Devuelve el tamaño del vector
      */
-    @Override
     public int size() {
         return vec.size();
     }

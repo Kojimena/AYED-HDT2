@@ -9,7 +9,7 @@ public class MyCalculadora implements Calculadora {
     private Stack miStack;
 
     public MyCalculadora(){
-        miStack= new MyStack();
+        miStack= new MyStack(); //creación del stack
     }
 
     /**
@@ -50,7 +50,7 @@ public class MyCalculadora implements Calculadora {
             }
             
         }
-        return res;
+        return res; //retono del resultado de la operación
 
     }
 
