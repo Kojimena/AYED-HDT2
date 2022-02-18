@@ -21,16 +21,17 @@ public class Controlador {
     public static void main(String[] args) {
 
         vista.mensaje("\nCalculadora de operaciones postfix");
+        Calculadora calculadora= new MyCalculadora();
 
         try {
             archivo= new File("datos.txt");
             lectura = new FileReader(archivo);
             buffR= new BufferedReader(lectura);
             line= buffR.readLine();
-            vista.mensaje("\nArchivo leido...");
+            vista.mensaje("\nLeyendo su archivo.....");
         } catch (Exception e) {
-            //TODO: handle exception
-            vista.mensaje("No hay ningún archivo");
+            vista.mensaje("\nNo hay ningún archivo");
         }  
+        vista.mensaje("\nSu resultado es: "+ calculadora.Calculo(line) );
     }
 }
