@@ -5,7 +5,7 @@
  */
 
  public interface Stack <E>{
-     
+
     /**
      * 
      * @param elemento
@@ -23,5 +23,17 @@
      * @return
      */
 	public boolean IsEmpty();
+
+    /**
+    * 
+    * @return 
+    */
+   public int size();
+
+   /**
+    * 
+    * @return 
+    */
+   public E peek();
     
 }
