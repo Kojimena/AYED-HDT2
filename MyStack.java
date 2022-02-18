@@ -14,7 +14,7 @@ public class MyStack<E> implements Stack<E> {
     }
 
     /** 
-    * @param elemente
+    * @param element
     * Agregar elementos 
     */
     public void Push(E element) { 
