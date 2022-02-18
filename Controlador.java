@@ -30,7 +30,7 @@ public class Controlador {
             buffR= new BufferedReader(lectura);
             line= buffR.readLine();
             vista.mensaje("\nLeyendo su archivo.....");
-            vista.mensaje("\nSu resultado es: "+ calculadora.Calculo(line) );
+            vista.mensaje("\nSu resultado es: "+ calculadora.Calculo(line)+ "\n" );
         } catch (Exception e) {
             vista.mensaje("\nNo se encontro archivo, asegurese de ingresar el nombre correctamente.");
         }  
