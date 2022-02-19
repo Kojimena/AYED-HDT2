@@ -27,7 +27,7 @@ public class Controlador {
         Calculadora calculadora= new MyCalculadora();
 
         try {
-            archivo= new File("datos.txt");
+            archivo= new File("/Users/jime/Desktop/HT 2 /HT-2/src/datos.txt"); //cambiar ruta del archivo
             lectura = new FileReader(archivo);
             buffR= new BufferedReader(lectura);
             line= buffR.readLine();
