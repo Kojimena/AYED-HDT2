@@ -8,16 +8,16 @@ class MyStackTest {
 	public void TestPush() {
 		Stack nuevostack = new MyStack();
 		
-		nuevostack.Push(4);
+		nuevostack.push(4);
 		
 		assertEquals(nuevostack.peek() ,4);
 	}
 	
 	public void TestPop() {
 		Stack nuevostack = new MyStack();
-		nuevostack.Push(3);
-		nuevostack.Push(2);
-		nuevostack.Pop();
+		nuevostack.push(3);
+		nuevostack.push(2);
+		nuevostack.pull();
 		assertEquals(nuevostack.peek() ,3);
 
 	}
