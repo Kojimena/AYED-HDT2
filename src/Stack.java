@@ -21,7 +21,7 @@
      * pre: stack is not empty
      * post: most recently pushed item is removed and returned
      */
-	public E pop();
+	public E pull();
 
     /**
      * 

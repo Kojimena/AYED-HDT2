@@ -27,7 +27,7 @@ public class MyStack<E> implements Stack<E> {
      * @return 
      * Eliminar el utlimo valor dentro de la pila
      */
-    public E pop(){
+    public E pull(){
         return (vec.remove(vec.size()-1));
     }
 

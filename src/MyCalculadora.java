@@ -28,22 +28,22 @@ public class MyCalculadora implements Calculadora {
                     
                     //si operador es +
                     case "+": 
-                        res = (int)miStack.pop()+(int)miStack.pop();
+                        res = (int)miStack.pull()+(int)miStack.pull();
                         miStack.push(res);
                     break;
                     //si operador es -
                     case "-": 
-                        res = (int)miStack.pop()-(int)miStack.pop();
+                        res = (int)miStack.pull()-(int)miStack.pull();
                         miStack.push(res);
                     break;
                     //si operador es *
                     case "*":
-                        res = (int)miStack.pop()*(int)miStack.pop();
+                        res = (int)miStack.pull()*(int)miStack.pull();
                         miStack.push(res);
                     break;
                     //si operador es /
                     case "/": 
-                        res = (int)miStack.pop()/(int)miStack.pop();
+                        res = (int)miStack.pull()/(int)miStack.pull();
                         miStack.push(res);
                     break;
                 }
