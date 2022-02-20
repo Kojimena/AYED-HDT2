@@ -11,6 +11,6 @@ public interface Calculadora {
      * @param vec
      * @return
      */
-    public int Calculo(String vec);
+    public int Evaluate(String vec);
 
 }

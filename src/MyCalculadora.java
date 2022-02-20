@@ -16,7 +16,7 @@ public class MyCalculadora implements Calculadora {
      * @param vector
      * @return res 
      */
-    public int Calculo(String vector){
+    public int Evaluate(String vector){
         int res = 0;
         String[] partes = vector.split(" "); //Separación de dígitos y operandos por medio de un espacio en blanco
         for (int i = 0; i < partes.length; i++) {

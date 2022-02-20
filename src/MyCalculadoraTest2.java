@@ -9,7 +9,7 @@ public class MyCalculadoraTest2 {
 	public void testCalculo() {
 		
 		Calculadora estaCalculadora = new MyCalculadora ();
-		int res = estaCalculadora.Calculo("1 2 + 4 * 3 +");
+		int res = estaCalculadora.Evaluate("1 2 + 4 * 3 +");
 		
 		assertEquals(15,res);
 		}
