@@ -17,7 +17,7 @@ public class MyStack<E> implements Stack<E> {
     * @param element
     * Agregar elementos 
     */
-    public void Push(E element) { 
+    public void push(E element) { 
 		vec.addElement(element);
 		
 	}
@@ -27,7 +27,7 @@ public class MyStack<E> implements Stack<E> {
      * @return 
      * Eliminar el utlimo valor dentro de la pila
      */
-    public E Pop(){
+    public E pop(){
         return (vec.remove(vec.size()-1));
     }
 
@@ -36,7 +36,7 @@ public class MyStack<E> implements Stack<E> {
      * @return 
      * Devuelve true si está vacío y false si esta lleno
      */
-    public boolean IsEmpty(){
+    public boolean isEmpty(){
         return vec.isEmpty();
     }
 
@@ -54,7 +54,7 @@ public class MyStack<E> implements Stack<E> {
      * @return 
      * Devuelve el tamaño del vector
      */
-    public int size() {
+    public int count() {
         return vec.size();
     }
 

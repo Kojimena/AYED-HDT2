@@ -13,7 +13,7 @@
      * post: item is added to stack
      * will be popped next if no intervening push
      */
-	public void Push (E elemento);
+	public void push (E elemento);
 
     /**
      * 
@@ -21,21 +21,21 @@
      * pre: stack is not empty
      * post: most recently pushed item is removed and returned
      */
-	public E Pop();
+	public E pop();
 
     /**
      * 
      * @return
      * post: returns true if and only if the stack is empty
      */
-	public boolean IsEmpty();
+	public boolean isEmpty();
 
     /**
     * 
     * @return 
     * post: returns the number of elements in the stack
     */
-   public int size();
+   public int count();
 
    /**
     * 

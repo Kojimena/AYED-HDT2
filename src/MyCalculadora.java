@@ -21,30 +21,30 @@ public class MyCalculadora implements Calculadora {
         String[] partes = vector.split(" "); //Separación de dígitos y operandos por medio de un espacio en blanco
         for (int i = 0; i < partes.length; i++) {
             try{
-                miStack.Push(Integer.parseInt(partes[i])); //Push si es un número  Ref: https://w3api.com/Java/Integer/parseInt/
+                miStack.push(Integer.parseInt(partes[i])); //Push si es un número  Ref: https://w3api.com/Java/Integer/parseInt/
             
             } catch (Exception e) {
                 switch(partes[i]){   //Si es un operador pasa al catch y se resuelve para el caso necesario
                     
                     //si operador es +
                     case "+": 
-                        res = (int)miStack.Pop()+(int)miStack.Pop();
-                        miStack.Push(res);
+                        res = (int)miStack.pop()+(int)miStack.pop();
+                        miStack.push(res);
                     break;
                     //si operador es -
                     case "-": 
-                        res = (int)miStack.Pop()-(int)miStack.Pop();
-                        miStack.Push(res);
+                        res = (int)miStack.pop()-(int)miStack.pop();
+                        miStack.push(res);
                     break;
                     //si operador es *
                     case "*":
-                        res = (int)miStack.Pop()*(int)miStack.Pop();
-                        miStack.Push(res);
+                        res = (int)miStack.pop()*(int)miStack.pop();
+                        miStack.push(res);
                     break;
                     //si operador es /
                     case "/": 
-                        res = (int)miStack.Pop()/(int)miStack.Pop();
-                        miStack.Push(res);
+                        res = (int)miStack.pop()/(int)miStack.pop();
+                        miStack.push(res);
                     break;
                 }
             }
